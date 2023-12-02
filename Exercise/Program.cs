@@ -257,6 +257,7 @@ static class Program
         Console.WriteLine("10th example EXAMPLE Calling Destructor");
         Details();
         GC.Collect();
+        Console.WriteLine("collected");
     }
     public static void Details()
     {

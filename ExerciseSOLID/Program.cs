@@ -20,7 +20,7 @@
 //Subclasses should be able to provide meaningful implementations that honor the contract established by the base class.
 
 //4.Interface seggragation
-//In this snippet, the ForecedInterfacePayment class implements the IPayment interface by providing an implementation for the EPay method. However, if this class doesn't
+//In this snippet, the ForecedInterfacePayment class implements the IPaymentAll interface by providing an implementation for the EPay and PayWithCrypto method. However, if this class doesn't
 //need all the methods of the IPayment interface, it is being forced to implement more than it requires, which can lead to unnecessary dependencies and implementation
 //details.
 

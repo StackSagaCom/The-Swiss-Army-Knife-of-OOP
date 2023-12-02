@@ -6,7 +6,25 @@ using System.Threading.Tasks;
 
 namespace Exercise.SOLID
 {
-    public class ForecedInterfacePayment : IPayment
+    //public class ForecedInterfacePayment : IPaymentAll
+    //{
+    //    public Task EPay()
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public Task PayWithCrypto()
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+    //}
+    //public interface IPaymentAll
+    //{
+    //    Task EPay();
+    //    Task PayWithCrypto();
+    //}
+
+    public class SimpleFlexibileInterfacePayment : IPayment
     {
         public Task EPay()
         {
@@ -20,7 +38,7 @@ namespace Exercise.SOLID
             throw new NotImplementedException();
         }
 
-        public Task payWithCrypto()
+        public Task PayWithCrypto()
         {
             throw new NotImplementedException();
         }
@@ -31,6 +49,6 @@ namespace Exercise.SOLID
     }
     public interface ICryptoPayment 
     {
-        Task payWithCrypto();
+        Task PayWithCrypto();
     }
 }
